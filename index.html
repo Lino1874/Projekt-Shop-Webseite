@@ -1,60 +1,155 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<head>
+    <title>Bücherbörse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+   
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+      <a class="navbar-brand" href="#">Bücherbörse</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Kontakt.html">Kontakt</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Nutzer.html">Nutzer</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Bücher.html">Bücher</a> 
+            </li>
+            
+                  
+              </li>
+          </ul>
       </div>
-    </div>
-  </nav>
+  </div>
+</nav>
 
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Test für Artikel</h5>
-      <p class="card-text">Textfeld</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Item</li>
-      <li class="list-group-item">Preis bsp</li>
-      <li class="list-group-item">Produkt</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
-    </div>
+
+
+    
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Willkommen zur Bücherbörse</h1>
+            <p class="lead">Tausche, kaufe oder verkaufe gebrauchte Bücher.</p>
+        </div>
+    </header>
+
+    
+    <section class="container my-5">
+      <div class="row">
+          <!-- Buch 1 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="static/Images/Mathematik.jpg" class="card-img-top" alt="Mathematik">
+                  <div class="card-body">
+                      <h5 class="card-title">Mathematik</h5>
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mathematikModal">Mehr erfahren</button>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Buch 2 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="static/Images/Biologie.jpg" class="card-img-top" alt="Biologie">
+                  <div class="card-body">
+                      <h5 class="card-title">Biologie</h5>
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#biologieModal">Mehr erfahren</button>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Buch 3 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="static/Images/Informatik.jpg" class="card-img-top" alt="Informatik">
+                  <div class="card-body">
+                      <h5 class="card-title">Informatik</h5>
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#informatikModal">Mehr erfahren</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Modal für Mathematik -->
+  <div class="modal fade" id="mathematikModal" tabindex="-1" aria-labelledby="mathematikModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="mathematikModalLabel">Mathematik</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <p><strong>Zustand:</strong> Neuwertig</p>
+                  <p><strong>Preis:</strong> 20€</p>
+                  <p><strong>Fach:</strong> Mathematik</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+              </div>
+          </div>
+      </div>
   </div>
 
+  <!-- Modal für Biologie -->
+  <div class="modal fade" id="biologieModal" tabindex="-1" aria-labelledby="biologieModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="biologieModalLabel">Biologie</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <p><strong>Zustand:</strong> Gebraucht</p>
+                  <p><strong>Preis:</strong> 10€</p>
+                  <p><strong>Fach:</strong> Biologie</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+              </div>
+          </div>
+      </div>
+  </div>
 
-  <label for="customRange1" class="form-label">Wie gehypt bist du auf den shop</label>
-<input type="range" class="form-range" id="customRange1">
+  <!-- Modal für Informatik -->
+  <div class="modal fade" id="informatikModal" tabindex="-1" aria-labelledby="informatikModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="informatikModalLabel">Informatik</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <p><strong>Zustand:</strong> Beschädigt</p>
+                  <p><strong>Preis:</strong> 5€</p>
+                  <p><strong>Fach:</strong> Informatik</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  
+    <footer class="bg-dark text-white text-center py-3">
+        <p> 2025 Bücherbörse </p>
+        <p>
+      
+            <a href="#" class="text-white">Datenschutz</a>
+        </p>
+    </footer>
+
+</body>
+</html>
